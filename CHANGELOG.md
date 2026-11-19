@@ -1,5 +1,9 @@
 # Versions
 
+## V1.0.1 — 2026-11-19
+
+Optimisation de l’illustration décorative pour accélérer le chargement mobile et faciliter la réplication GitHub/Cloudflare Pages.
+
 ## V1.0 — 2026-11-19
 
 Version présentable : deux modes, dix vues, formulaires, calculs, filtres, exports, sauvegarde locale, impression et responsive.
