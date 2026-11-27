@@ -171,5 +171,6 @@
   document.querySelector('#exportProject').onclick=()=>download(`mission-chine-2026-sauvegarde-${new Date().toISOString().slice(0,10)}.json`,JSON.stringify(state,null,2));
   document.querySelector('#globalSearch').oninput=e=>{const q=e.target.value.trim().toLowerCase();if(q.length<2)return;const route=routes.find(([id,label])=>label.toLowerCase().includes(q)||JSON.stringify(state[id]||'').toLowerCase().includes(q));if(route&&route[0]!==current){current=route[0];location.hash=current;render()}};
   addEventListener('hashchange',()=>{current=location.hash.slice(1)||'mission';if(presentation&&current!=='presentation')setPresentation(false);else render();scrollTo(0,0)});
+  installMissionDashboard({pages,state,missionDays,primaryRoutes,secondaryRoutes,TENCENT_URL,esc,icons,render});
   render();
 })();

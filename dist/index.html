@@ -6,7 +6,8 @@
   <meta name="theme-color" content="#081d2b">
   <meta name="description" content="BUSINESS CHINE — portail mobile de la mission commerciale du 23 novembre au 6 décembre 2026.">
   <title>BUSINESS CHINE · Mission 2026</title>
-  <link rel="preload" as="image" href="assets/mission-route-decorative.jpg">
+  <link rel="preload" as="image" href="assets/architecture.jpg">
+  <link rel="stylesheet" href="mission.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,6 +29,7 @@
       <header class="topbar">
         <div><span class="live-dot" aria-hidden="true"></span><span id="saveStatus">Données enregistrées localement</span></div>
         <div class="top-actions">
+          <button id="language" type="button" aria-label="Français / 中文">中文</button>
           <label class="search"><span class="sr-only">Rechercher</span><input id="globalSearch" type="search" placeholder="Rechercher dans BUSINESS CHINE"></label>
           <button id="printPresentation" type="button">Imprimer</button>
         </div>
@@ -36,6 +38,7 @@
     </main>
   </div>
   <div id="toast" role="status" aria-live="polite"></div>
+  <script src="mission.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
