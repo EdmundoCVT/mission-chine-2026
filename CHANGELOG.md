@@ -7,6 +7,7 @@
 - Espace d’équipe pour Edmond (Business & Strategy), Lourenco (Technical & Purchasing) et Valencia (Sourcing & Logistics), avec missions par date, échéances et progression.
 - Liste interactive de 15 tâches proposées, attribuables, éditables et filtrables par personne, date, ville et statut.
 - Tâches liées aux jours du planning; copie TSV compatible tableur et lien Tencent Docs.
+- Formulaire de tâche validé dans le navigateur; ajout et modification sauvegardés localement.
 - Données de tâches enregistrées localement sans synchronisation; sauvegarde JSON enrichie sans modifier la structure des champs existants.
 - Les priorités de départ sont des choix de planification modifiables; les tâches préchargées restent à valider.
 

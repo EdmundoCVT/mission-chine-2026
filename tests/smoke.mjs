@@ -12,7 +12,7 @@ const required = ['mission','timeline','catalogue','equipe','pilotage','vision',
 for (const route of required) {
   if (!js.includes(`['${route}'`) && !js.includes(`${route}:()=>`)) throw new Error(`Route manquante: ${route}`);
 }
-for (const token of ['tasks','Business & Strategy','Technical & Purchasing','Sourcing & Logistics','Find 3 skid steer loader manufacturers','Find 2 telescopic handler manufacturers','businessChine.tasks.v23','data-task-filter="city"','copyTasksTSV','Team to-do list']) {
+for (const token of ['tasks','Business & Strategy','Technical & Purchasing','Sourcing & Logistics','Find 3 skid steer loader manufacturers','Find 2 telescopic handler manufacturers','businessChine.tasks.v23','data-task-filter="city"','copyTasksTSV','id="saveTask" type="button"','Team to-do list']) {
   if (!mission.includes(token)) throw new Error(`Fonction V2.3 manquante: ${token}`);
 }
 const seeded = mission.match(/\['(?:Valencia|Lourenco|Edmond)','/g)||[];
