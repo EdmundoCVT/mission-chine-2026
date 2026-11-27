@@ -4,6 +4,7 @@
 
 - Planning visuel avec trois itinéraires sélectionnables, Shanghai, Jinan, Guangzhou, Foshan et Shenzhen.
 - Étapes par jour avec statuts modifiables, retouches locales, indicateur du jour et copie en français/chinois.
+- Accès à l’export JSON complet depuis le planning mobile.
 - Temps de trajet affichés comme indicatifs; rendez-vous futurs présentés comme propositions à confirmer par Valencia.
 - Photos d’illustration pour la construction, l’intérieur résidentiel et l’électronique, sans valeur de preuve ni produit spécifique.
 - L’export JSON inclut le programme et ses modifications; stockage local historique et 14 vues préservés.
