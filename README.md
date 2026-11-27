@@ -14,6 +14,8 @@ Les saisies sont conservées dans `localStorage` sous la clé historique `missio
 
 Le site étant public, le code livré ne contient aucune donnée commerciale privée. Les fournisseurs, contacts, prix négociés, rendez-vous et validations détaillées restent dans Tencent Docs. Il n’existe aucune synchronisation automatique entre le site et Tencent.
 
+Les champs financiers et commerciaux commencent à zéro. Les intitulés de produits signalés comme **exemple provisoire** servent uniquement à montrer la structure du tableau de bord.
+
 ## Cloudflare Pages
 
 - Répertoire de production : `dist`

@@ -44,7 +44,7 @@ Name: BUSINESS CHINE · Mission 2026. Route line: Chine → France → Sal. Voic
 
 ## Evidence on Hand
 
-Confirmed facts are limited to Edmond's identity, trip dates, Guangzhou as the principal destination, the €3,000 available envelope, the requested route and objectives. No supplier, price, customer demand or revenue is verified; the interface must not imply otherwise.
+Confirmed facts are limited to Edmond's identity, trip dates, Guangzhou as the principal destination, the requested route and objectives. No supplier, price, customer demand or revenue is verified; the interface must not imply otherwise.
 
 ## Product Principles
 

@@ -1,5 +1,12 @@
 # Versions
 
+## V2.0.1 — 2026-11-27
+
+- Retrait complet des montants commerciaux préremplis dans les exemples publics.
+- Migration locale ciblée de l’ancienne ligne DJI d’exemple, sans effacer les autres saisies de l’utilisateur.
+- Suppression de l’affirmation non vérifiée concernant une utilisation depuis WeChat.
+- Tencent Docs reste un document distinct, sans synchronisation automatique annoncée.
+
 ## V2.0 — 2026-11-27
 
 - Accueil mobile-first et identité BUSINESS CHINE.

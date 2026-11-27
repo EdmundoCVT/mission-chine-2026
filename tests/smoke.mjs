@@ -21,11 +21,13 @@ if (!css.includes('@media(max-width:760px)')) throw new Error('Breakpoint mobile
 if (!css.includes('@media print')) throw new Error('Style impression manquant');
 
 const rate = 7.31;
-const eur = 2999 / rate;
-const fullCost = eur + 45 + 95 + 12;
-const margin = 620 - fullCost;
-if (Math.abs(eur - 410.26) > 0.01) throw new Error('Conversion RMB/EUR incorrecte');
-if (Math.abs(fullCost - 562.26) > 0.01) throw new Error('Coût complet incorrect');
-if (Math.abs(margin - 57.74) > 0.01) throw new Error('Marge incorrecte');
+const eur = 731 / rate;
+const fullCost = eur + 10 + 5 + 2;
+const margin = 130 - fullCost;
+if (Math.abs(eur - 100) > 0.01) throw new Error('Conversion RMB/EUR incorrecte');
+if (Math.abs(fullCost - 117) > 0.01) throw new Error('Coût complet incorrect');
+if (Math.abs(margin - 13) > 0.01) throw new Error('Marge incorrecte');
+if (/product:'DJI Osmo Pocket'[^\n]+(?:rmb|shipping|taxes|fees|sale):[1-9]/.test(js)) throw new Error('Montant commercial prérempli détecté');
+if (js.includes('lisibles depuis WeChat')) throw new Error('Affirmation WeChat non vérifiée détectée');
 
 console.log('Smoke tests: navigation, libellés, responsive, exports et calculs vérifiés.');
