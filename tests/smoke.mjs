@@ -20,7 +20,7 @@ for (const token of ['BUSINESS CHINE','Array.from({length:25}','Aucune synchroni
 for (const token of ["A:{label", "B:{label", "C:{label", 'Carte schématique', 'à confirmer par Valencia', 'businessChine.journey.v22', 'Copier en chinois pour WeChat', 'Préparation avec Valencia', '计划航班']) {
   if (!mission.includes(token)) throw new Error(`Planning V2.2 incomplet: ${token}`);
 }
-if (!mission.includes('id="exportJourney"')) throw new Error('L’export complet doit rester accessible depuis le planning mobile');
+for (const id of ['languageJourney','exportJourney']) if (!mission.includes(`id="${id}"`)) throw new Error(`L’action ${id} doit être accessible depuis le planning mobile`);
 if (!js.includes("journey:JSON.parse(localStorage.getItem('businessChine.journey.v22')")) throw new Error('La sauvegarde JSON doit inclure le planning V2.2');
 if ((js.match(/iso:'2026-(11|12)-/g)||[]).length !== 14) throw new Error('La timeline doit contenir exactement 14 jours');
 if (!css.includes('@media(max-width:760px)')) throw new Error('Breakpoint mobile manquant');
