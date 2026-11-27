@@ -19,6 +19,8 @@ Delegated by the brief: buildless HTML, CSS and JavaScript, chosen for reliable 
 
 Provide one visual operating center for the 23 November–6 December 2026 Guangzhou mission: test demand, qualify suppliers, control the budget, track orders and repayment, and evaluate a concrete opportunity in Sal.
 
+The public BUSINESS CHINE surface gives the mission a mobile entry point: home, fourteen-day timeline, a twenty-five-slot local catalogue, team roles and a link to the separate Tencent document used with Valencia.
+
 ## Positioning
 
 The product connects one commercial loop—China sourcing, France sales, and Sal tourism opportunities—in a single mission ledger rather than splitting travel notes, supplier data and financial follow-up across separate tools.
@@ -32,12 +34,13 @@ Used before, during and after the trip. Records may be entered from a phone in m
 - Two modes: Pilotage and Présentation.
 - Editable local data, formulas, search, filters, photo attachments, CSV/JSON exports and print view.
 - No authentication in V1 and no sensitive, banking, identity, password or confidential client data.
+- The deployed site remains public. Supplier names, private contacts, negotiated prices, appointments and validations belong in Tencent Docs; the site never claims to synchronize with it.
 - All illustrative commercial records are labelled “exemple provisoire”; unconfirmed Sal opportunities remain hypotheses.
 - Architecture leaves room for later protected storage and AI assistance, but V1 is local-first.
 
 ## Brand Commitments
 
-Name: Mission Chine 2026. Route line: Chine → France → Sal. Voice: energetic and operational in Pilotage; sober and decision-oriented in Présentation.
+Name: BUSINESS CHINE · Mission 2026. Route line: Chine → France → Sal. Voice: energetic and operational in Pilotage; sober and decision-oriented in Présentation.
 
 ## Evidence on Hand
 

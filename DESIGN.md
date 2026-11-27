@@ -2,6 +2,8 @@
 
 The interface is an expedition ledger crossed with an international route board: disciplined navy surfaces, warm paper, decisive vermilion and a turquoise Sal accent. Pilotage feels active and dense; Présentation removes operational notes and shifts to a calmer, board-ready rhythm.
 
+BUSINESS CHINE extends this world with the rhythm of a departure board: oversized destination lettering, stamped date bands, ledger rows and explicit boundaries between public structure, local browser data and the Tencent workspace.
+
 ## Tokens
 
 - Ink: `#102A43`; deep surface: `#081D2B`; paper: `#F7F1E6`; white: `#FFFFFF`.
@@ -12,7 +14,7 @@ The interface is an expedition ledger crossed with an international route board:
 
 ## Composition
 
-The first viewport behaves as a mission brief: route, dates, objective and live readiness are one integrated scene over an authored decorative route image. Operational pages favor ledgers, split panels and strong section landmarks rather than grids of interchangeable cards.
+The first viewport behaves as a mission departure board: route, dates, objective and the public/private separation are one integrated scene over an authored decorative route image. Operational pages favor ledgers, split panels and strong section landmarks rather than grids of interchangeable cards.
 
 ## Interaction
 

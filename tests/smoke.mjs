@@ -6,13 +6,17 @@ const css = fs.readFileSync('dist/styles.css','utf8');
 const js = fs.readFileSync('dist/app.js','utf8');
 
 new vm.Script(js);
-const required = ['mission','vision','finance','france','sal','carnet','contacts','roadmap','journal','presentation'];
+const required = ['mission','timeline','catalogue','equipe','pilotage','vision','finance','france','sal','carnet','contacts','roadmap','journal','presentation'];
 for (const route of required) {
   if (!js.includes(`['${route}'`) && !js.includes(`${route}:()=>`)) throw new Error(`Route manquante: ${route}`);
 }
 for (const token of ['exemple provisoire','hypothèse prioritaire à valider','RMB — environ','localStorage','Exporter le projet']) {
   if (!(html+js).includes(token)) throw new Error(`Contenu requis manquant: ${token}`);
 }
+for (const token of ['BUSINESS CHINE','Array.from({length:25}','Aucune synchronisation automatique','https://docs.qq.com/sheet/DSnBjT2RSUnpYV0J2?tab=000001']) {
+  if (!(html+js).includes(token)) throw new Error(`Élément BUSINESS CHINE manquant: ${token}`);
+}
+if ((js.match(/iso:'2026-(11|12)-/g)||[]).length !== 14) throw new Error('La timeline doit contenir exactement 14 jours');
 if (!css.includes('@media(max-width:760px)')) throw new Error('Breakpoint mobile manquant');
 if (!css.includes('@media print')) throw new Error('Style impression manquant');
 

@@ -1,5 +1,14 @@
 # Versions
 
+## V2.0 — 2026-11-27
+
+- Accueil mobile-first et identité BUSINESS CHINE.
+- Timeline publique du 23 novembre au 6 décembre 2026.
+- Catalogue local de 25 emplacements d’achat, sans données commerciales dans le code public.
+- Équipe et séparation explicite entre site public, stockage local et Tencent Docs.
+- Navigation mobile concentrée sur cinq entrées, avec toutes les fonctions V1 conservées dans Pilotage.
+- Sauvegarde Git complète créée avant modification.
+
 ## V1.0.1 — 2026-11-19
 
 Optimisation de l’illustration décorative pour accélérer le chargement mobile et faciliter la réplication GitHub/Cloudflare Pages.
