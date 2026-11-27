@@ -4,6 +4,7 @@ import vm from 'node:vm';
 const html = fs.readFileSync('dist/index.html','utf8');
 const css = fs.readFileSync('dist/styles.css','utf8');
 const js = fs.readFileSync('dist/app.js','utf8');
+const mission = fs.readFileSync('dist/mission.js','utf8');
 
 new vm.Script(js);
 const required = ['mission','timeline','catalogue','equipe','pilotage','vision','finance','france','sal','carnet','contacts','roadmap','journal','presentation'];
@@ -16,6 +17,10 @@ for (const token of ['exemple provisoire','hypothèse prioritaire à valider','R
 for (const token of ['BUSINESS CHINE','Array.from({length:25}','Aucune synchronisation automatique','https://docs.qq.com/sheet/DSnBjT2RSUnpYV0J2?tab=000001']) {
   if (!(html+js).includes(token)) throw new Error(`Élément BUSINESS CHINE manquant: ${token}`);
 }
+for (const token of ["A:{label", "B:{label", "C:{label", 'Carte schématique', 'à confirmer par Valencia', 'businessChine.journey.v22', 'Copier en chinois pour WeChat', 'Préparation avec Valencia', '计划航班']) {
+  if (!mission.includes(token)) throw new Error(`Planning V2.2 incomplet: ${token}`);
+}
+if (!js.includes("journey:JSON.parse(localStorage.getItem('businessChine.journey.v22')")) throw new Error('La sauvegarde JSON doit inclure le planning V2.2');
 if ((js.match(/iso:'2026-(11|12)-/g)||[]).length !== 14) throw new Error('La timeline doit contenir exactement 14 jours');
 if (!css.includes('@media(max-width:760px)')) throw new Error('Breakpoint mobile manquant');
 if (!css.includes('@media print')) throw new Error('Style impression manquant');

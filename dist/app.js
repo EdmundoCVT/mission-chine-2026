@@ -27,7 +27,7 @@
   const routes = [...primaryRoutes,...secondaryRoutes];
   const purchaseSlots = Array.from({length:25},(_,i)=>({id:`achat-${String(i+1).padStart(2,'0')}`,slot:i+1,product:'',category:'',quantity:1,status:'À qualifier',note:''}));
   const defaults = {
-    meta:{version:'2.0.1',updatedAt:today,exchangeRate:7.31},
+    meta:{version:'2.2',updatedAt:today,exchangeRate:7.31},
     finance:{envelope:0,travelBudget:0,actualExpenses:0,productCost:0,revenue:0,received:0,repayment:0,remainingDebt:0},
     metrics:{progress:18,prospects:0,buyers:0,orders:0,verifiedSuppliers:0,estimatedMargin:0,received:0,salOpportunities:9},
     france:[
@@ -47,7 +47,7 @@
   function migrate(v){
     const legacyExample=(v?.france||[]).find(o=>o.example&&o.product==='DJI Osmo Pocket'&&o.rmb===2999&&o.shipping===45&&o.taxes===95&&o.fees===12&&o.sale===620);
     if(legacyExample)Object.assign(legacyExample,{rmb:0,shipping:0,taxes:0,fees:0,sale:0});
-    if(v?.meta)v.meta.version='2.0.1';
+    if(v?.meta)v.meta.version='2.2';
     return v;
   }
   function load(){try{const v=JSON.parse(localStorage.getItem(KEY));return v?merge(defaults,migrate(v)):structuredClone(defaults)}catch{return structuredClone(defaults)}}
@@ -168,7 +168,7 @@
   function setPresentation(on){presentation=on;document.body.classList.toggle('presentation',on);const b=document.querySelector('#modeToggle');b.setAttribute('aria-pressed',String(on));b.querySelector('span:last-child').textContent=on?'Quitter la présentation':'Mode présentation';if(on){current='presentation';location.hash='presentation'}render()}
   document.querySelector('#modeToggle').onclick=()=>setPresentation(!presentation);
   document.querySelector('#printPresentation').onclick=()=>{if(current!=='presentation'){current='presentation';render()}setTimeout(()=>window.print(),80)};
-  document.querySelector('#exportProject').onclick=()=>download(`mission-chine-2026-sauvegarde-${new Date().toISOString().slice(0,10)}.json`,JSON.stringify(state,null,2));
+  document.querySelector('#exportProject').onclick=()=>{const backup={...state,journey:JSON.parse(localStorage.getItem('businessChine.journey.v22')||'{}')};download(`mission-chine-2026-sauvegarde-${new Date().toISOString().slice(0,10)}.json`,JSON.stringify(backup,null,2))};
   document.querySelector('#globalSearch').oninput=e=>{const q=e.target.value.trim().toLowerCase();if(q.length<2)return;const route=routes.find(([id,label])=>label.toLowerCase().includes(q)||JSON.stringify(state[id]||'').toLowerCase().includes(q));if(route&&route[0]!==current){current=route[0];location.hash=current;render()}};
   addEventListener('hashchange',()=>{current=location.hash.slice(1)||'mission';if(presentation&&current!=='presentation')setPresentation(false);else render();scrollTo(0,0)});
   installMissionDashboard({pages,state,missionDays,primaryRoutes,secondaryRoutes,TENCENT_URL,esc,icons,render});
