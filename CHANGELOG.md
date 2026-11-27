@@ -1,5 +1,15 @@
 # Versions
 
+## V2.3 — 2026-11-27
+
+- Remplacement du chinois d’interface par l’anglais; bascule français/anglais conservée sur les 15 vues et le planning.
+- Maintien des noms chinois des cinq villes pour faciliter les déplacements.
+- Espace d’équipe pour Edmond (Business & Strategy), Lourenco (Technical & Purchasing) et Valencia (Sourcing & Logistics), avec missions par date, échéances et progression.
+- Liste interactive de 15 tâches proposées, attribuables, éditables et filtrables par personne, date, ville et statut.
+- Tâches liées aux jours du planning; copie TSV compatible tableur et lien Tencent Docs.
+- Données de tâches enregistrées localement sans synchronisation; sauvegarde JSON enrichie sans modifier la structure des champs existants.
+- Les priorités de départ sont des choix de planification modifiables; les tâches préchargées restent à valider.
+
 ## V2.2 — 2026-11-27
 
 - Planning visuel avec trois itinéraires sélectionnables, Shanghai, Jinan, Guangzhou, Foshan et Shenzhen.

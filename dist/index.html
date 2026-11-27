@@ -1,37 +1,37 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#081d2b">
-  <meta name="description" content="BUSINESS CHINE — portail mobile de la mission commerciale du 23 novembre au 6 décembre 2026.">
+  <meta name="description" content="BUSINESS CHINE — mobile hub for the November 23 to December 6, 2026 business mission.">
   <title>BUSINESS CHINE · Mission 2026</title>
   <link rel="preload" as="image" href="assets/architecture.jpg">
   <link rel="stylesheet" href="mission.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Aller au contenu</a>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="app-shell">
-    <aside class="sidebar" aria-label="Navigation principale">
-      <a class="brand" href="#mission" data-route="mission" aria-label="BUSINESS CHINE, accueil">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#mission" data-route="mission" aria-label="BUSINESS CHINE, home">
         <span class="brand-mark" aria-hidden="true">BC</span>
-        <span><strong>BUSINESS CHINE</strong><small>Mission 2026 · accès public</small></span>
+        <span><strong>BUSINESS CHINE</strong><small>Mission 2026 · public site</small></span>
       </a>
       <nav id="nav"></nav>
       <div class="side-actions">
-        <button id="modeToggle" class="mode-toggle" type="button" aria-pressed="false"><span aria-hidden="true">◐</span><span>Mode présentation</span></button>
-        <button id="exportProject" class="quiet-button" type="button">Exporter le projet</button>
+        <button id="modeToggle" class="mode-toggle" type="button" aria-pressed="false"><span aria-hidden="true">◐</span><span>Presentation mode</span></button>
+        <button id="exportProject" class="quiet-button" type="button">Export project</button>
       </div>
     </aside>
 
     <main id="main" tabindex="-1">
       <header class="topbar">
-        <div><span class="live-dot" aria-hidden="true"></span><span id="saveStatus">Données enregistrées localement</span></div>
+          <div><span class="live-dot" aria-hidden="true"></span><span id="saveStatus">Data saved locally</span></div>
         <div class="top-actions">
-          <button id="language" type="button" aria-label="Français / 中文">中文</button>
-          <label class="search"><span class="sr-only">Rechercher</span><input id="globalSearch" type="search" placeholder="Rechercher dans BUSINESS CHINE"></label>
-          <button id="printPresentation" type="button">Imprimer</button>
+          <button id="language" type="button" aria-label="Switch to French">Français</button>
+          <label class="search"><span class="sr-only">Search</span><input id="globalSearch" type="search" placeholder="Search BUSINESS CHINE"></label>
+          <button id="printPresentation" type="button">Print</button>
         </div>
       </header>
       <div id="page" aria-live="polite"></div>
